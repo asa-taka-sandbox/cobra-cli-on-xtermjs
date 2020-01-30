@@ -136,5 +136,5 @@ temp/
 
 # End of https://www.gitignore.io/api/go
 
-cobra-cli-on-xtermjs
-static/main.wasm
+static/my-cli.wasm
+my-cli

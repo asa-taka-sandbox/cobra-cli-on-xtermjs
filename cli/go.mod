@@ -1,4 +1,4 @@
-module github.com/asa-taka-sandbox/cobra-cli-on-xtermjs
+module github.com/asa-taka-sandbox/cobra-cli-on-xtermjs/cli
 
 go 1.13
 

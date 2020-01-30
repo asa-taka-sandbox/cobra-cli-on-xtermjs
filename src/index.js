@@ -4,7 +4,7 @@ import 'xterm/css/xterm.css'
 
 import './wasm_exec'
 
-const fetchedWasmBuf = fetch("main.wasm").then(res => res.arrayBuffer())
+const fetchedWasmBuf = fetch("my-cli.wasm").then(res => res.arrayBuffer())
 
 const runWasm = async (args) => {
   const go = new Go()

@@ -7,7 +7,8 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-wasm": "GOOS=js GOARCH=wasm go build -o static/main.wasm main.go",
+    "build-cli": "go build -o my-cli cli/main.go",
+    "build-wasm": "GOOS=js GOARCH=wasm go build -o static/my-cli.wasm cli/main.go",
     "copy-wasm-exec": "cp $(go env GOROOT)/misc/wasm/wasm_exec.js src",
     "serve-fetch-target": "serve -p 5000 fetch-target"
   },
