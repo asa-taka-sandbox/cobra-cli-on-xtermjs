@@ -1,0 +1,27 @@
+{
+  "name": "go-wasm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-wasm": "GOOS=js GOARCH=wasm go build -o static/main.wasm main.go",
+    "copy-wasm-exec": "cp $(go env GOROOT)/misc/wasm/wasm_exec.js src",
+    "serve-fetch-target": "serve -p 5000 fetch-target"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.3.1",
+    "regenerator-runtime": "^0.13.3",
+    "xterm": "^4.3.0",
+    "xterm-addon-fit": "^0.3.0"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}
